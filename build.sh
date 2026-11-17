@@ -19,4 +19,9 @@ swiftc -O \
 echo ">>> Kopiowanie Info.plist..."
 cp "$ROOT/Info.plist" "$APP_DIR/Contents/Info.plist"
 
+echo ">>> Kopiowanie ikony..."
+if [ -f "$ROOT/Assets/icon.icns" ]; then
+  cp "$ROOT/Assets/icon.icns" "$RES_DIR/icon.icns"
+fi
+
 echo ">>> Gotowe: $APP_DIR"
