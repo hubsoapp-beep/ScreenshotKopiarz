@@ -1,0 +1,28 @@
+# macOS
+.DS_Store
+*.dSYM.zip
+*.dSYM
+
+# Xcode / Swift
+build/
+DerivedData/
+*.xcworkspace/xcuserdata/
+*.xcodeproj/xcuserdata/
+*.xcodeproj/project.xcworkspace/xcuserdata/
+*.playground
+
+# SwiftPM
+.build/
+Package.resolved
+
+# App bundles
+*.app
+
+# Logs / local
+*.log
+.env
+.env.*
+
+# User data
+*.pem
+secrets*
